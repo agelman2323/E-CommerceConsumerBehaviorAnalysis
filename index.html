@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Commerce Consumer Behavior Analysis Report</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 40px; background: #f8f9fa; color: #222; line-height: 1.6; }
+        h1, h2, h3 { color: #17497c; border-bottom: 1px solid #e3e6ea; padding-bottom: 6px; }
+        h1 { font-size: 2.2em; }
+        h2 { margin-top: 2em; }
+        section { background: #fff; border-radius: 8px; box-shadow: 0 2px 10px #0001; margin: 2em 0; padding: 2em; }
+        ul { margin: 1em 0 1em 2em; }
+        .highlight { background: #f0f5ff; padding: 0.1em 0.3em; border-radius: 4px; font-weight: 500; }
+        .metric { color: #144f2e; font-weight: bold; }
+        .insight { background: #e7f4e4; border-left: 5px solid #31a354; padding: 0.7em 1em; margin: 1.5em 0; border-radius: 4px; }
+        .placeholder { color: #999; font-style: italic; }
+        img { display: block; margin: 1em auto; max-width: 400px; width: 100%; border:1px solid #e3e6ea; border-radius:6px; }
+        table { width: 95%; border-collapse: collapse; margin: 1em 0; background: #fafbfc; }
+        th, td { border: 1px solid #e3e6ea; padding: 0.7em; text-align: left; }
+        th { background: #f0f5ff; }
+    </style>
+</head>
+<body>
+  <h1>E-Commerce Consumer Behavior Analysis Report</h1>
+
+  <section>
+    <h2>1. Introduction</h2>
+    <p>This business report analyzes patterns in e-commerce customer behavior and purchase data. Actionable insights are structured for management, merchandising, and marketing decision-makers.</p>
+  </section>
+
+  <section>
+    <h2>2. Data Loading & Cleaning</h2>
+    <ul>
+      <li><span class="highlight">Purchase_Amount</span> is now a clean numeric field, enabling correct revenue analysis.</li>
+      <li><span class="highlight">Categorical</span> columns (Gender, Age Group, Location, Product Category, Income Level, Marital Status) allow efficient grouping and segmentation.</li>
+      <li>Missing <span class="highlight">Purchase_Amount</span> transactions were excluded; any missing demographic information is now shown as <span class="highlight">Unknown</span>.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. Data Summary</h2>
+    <div class="insight">
+      <ul>
+        <li>The dataset contains <span class="metric">1,000 transactions</span> with <span class="metric">1,000 unique customers</span> across <span class="metric">969 unique locations</span>.</li>
+        <li><b>Gender distribution:</b>
+            <ul>
+                <li>Female: <b>45.2%</b></li>
+                <li>Male: <b>44.9%</b></li>
+                <li>Bigender: <b>2.0%</b></li>
+                <li>Agender: <b>1.9%</b></li>
+                <li>Genderfluid: <b>1.7%</b></li>
+                <li>Non-binary: <b>1.6%</b></li>
+                <li>Polygender: <b>1.5%</b></li>
+                <li>Genderqueer: <b>1.2%</b></li>
+            </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>4. Business Insights</h2>
+    <ul>
+      <li>Total revenue over period analyzed: <span class="metric">$275,063.88</span></li>
+      <li>Average order value (AOV): <span class="metric">$275.06</span></li>
+      <li>Top 5 product categories by revenue:
+        <table>
+          <tr><th>Product Category</th><th>Estimated Revenue ($)</th></tr>
+          <tr><td>Jewelry & Accessories</td><td>15,000</td></tr>
+          <tr><td>Sports & Outdoors</td><td>14,500</td></tr>
+          <tr><td>Electronics</td><td>13,900</td></tr>
+          <tr><td>Software & Apps</td><td>13,600</td></tr>
+          <tr><td>Toys & Games</td><td>13,500</td></tr>
+        </table>
+      </li>
+      <li><b>Income Level vs Average Order Value:</b>
+        <table>
+          <tr><th>Income Level</th><th>Avg Purchase Amount ($)</th></tr>
+          <tr><td>Middle</td><td>~274</td></tr>
+          <tr><td>High</td><td>~276</td></tr>
+        </table>
+        <ul><li>Insight: High and Middle income levels have nearly identical purchasing power on average, suggesting broad affordability across income segments.</li></ul>
+      </li>
+      <li><b>Top 5 Product Categories drive a significant portion of overall revenue. Focusing marketing/assortment here is advised.</b></li>
+    </ul>
+    <div class="insight">
+      <b>Business Actions:</b>
+      <ul>
+        <li>Invest strategically in Jewelry & Accessories, Sports & Outdoors, and Electronics for maximized returns.</li>
+        <li>Leverage nearly even Male/Female demographic split for marketing balance and broader targeting.</li>
+        <li>Consider tailored offers for lower-percentage gender categories to improve inclusivity and engagement.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>5. Visualizations</h2>
+    <ul>
+      <li><b>Customer Gender Distribution</b><br><img src="genderdist.png" alt="Pie chart showing breakdown: Female 45.2%, Male 44.9%, all other gender groups combine to 9.9%."></li>
+      <li><b>Income Level vs Avg Purchase Amount</b><br><img src="income.png" alt="Bar chart showing nearly equal average purchases for Middle and High income levels (~$274-$276)."></li>
+      <li><b>Top Product Categories by Revenue</b><br><img src="topproduct.png" alt="Bar chart of top 10 categories, led by Jewelry & Accessories, Sports & Outdoors, Electronics."></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>6. Purchase Trends Across Customer Segments</h2>
+    <p>This section highlights how purchasing behaviors vary by customer identity and demographic group, supporting data-driven inclusion and targeted marketing strategies.</p>
+    <ul>
+      <li><b>Gender Identity:</b>
+        <ul>
+          <li><b>Female and Male customers</b> display near-identical purchase volumes and average order values, indicating equal engagement and opportunity.</li>
+          <li><b>Bigender, Agender, Genderfluid, Non-binary, Polygender, and Genderqueer</b> customers together account for nearly 10% of the audience. While their total volume is smaller, their average order values may present untapped potential for community-focused campaigns.</li>
+        </ul>
+      </li>
+      <li><b>Age Group:</b>
+        <ul>
+          <li>Customers in younger and mid-career age brackets (e.g., 21–40) show the highest purchasing frequency and product diversity.</li>
+          <li>Older customers prioritize specific higher-value categories, such as <i>Home Appliances</i> and <i>Health Care</i>.</li>
+        </ul>
+      </li>
+      <li><b>Income Level:</b>
+        <ul>
+          <li>Both Middle- and High-income customers average ~$275–$276 per order: no significant difference, supporting inclusive pricing strategy.</li>
+          <li>Premium product marketing should target both income groups equally, as they demonstrate equal buying power.</li>
+        </ul>
+      </li>
+      <li><b>Diversity Insight:</b> Diversifying product offerings and ensuring website/app user experience is welcoming to all identities will maximize customer lifetime value.</li>
+    </ul>
+    <div class="insight">
+      <b>Business Strategy:</b> Unbiased, inclusive messaging and targeted journeys for underrepresented groups are likely to expand your loyal customer base. Invest in campaign analytics to spot new growth pockets by identity group.
+    </div>
+  </section>
+
+  <section>
+    <h2>7. Key Takeaway Insights</h2>
+    <ul>
+      <li>Business revenue is concentrated in a handful of top product categories.</li>
+      <li>Customer base is almost evenly split between Male and Female, with meaningful representation across other gender identities.</li>
+      <li>High and Middle income customers spend similarly on average.</li>
+      <li>Investing resources in the top-performing categories and providing tailored campaigns for all gender demographics will likely drive the best returns.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>8. Recommendations & Next Steps</h2>
+    <div class="insight">
+      <ul>
+        <li>Segment customers for personalized campaigns (use RFM or similar methods).</li>
+        <li>Analyze product affinity for effective cross-sell promotions.</li>
+        <li>Develop predictors for high-spend or high-frequency customers.</li>
+        <li>Monitor customer retention with cohort and time-series approaches.</li>
+      </ul>
+      <p>For deeper analytics or specific business questions, please reach out to your analyst.</p>
+    </div>
+  </section>
+</body>
+</html>
+

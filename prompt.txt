@@ -1,0 +1,22 @@
+You are a Data Analyst helping me extract business insights from an e-commerce dataset. 
+I do not know how to code, so write clean and well-commented Python code inside the coding pane.
+
+Task:
+1️⃣ Load the uploaded dataset at path: "/mnt/data/ecommerce_consumer_behavior.csv"
+2️⃣ Clean the data:
+   - Remove $ from Purchase_Amount and convert to numeric
+   - Convert categorical variables to proper types
+   - Handle missing values appropriately (drop or fill with comments explaining choices)
+3️⃣ Generate a data summary:
+   - Head + .describe() summary report
+   - Count of customers by Gender, Age Group, and Location (Top 10)
+4️⃣ Business Insights:
+   - Total revenue + average order value
+   - Top 5 product categories by revenue
+   - Purchase behavior segmented by Income_Level and Marital_Status
+   - Correlation between Age and Purchase_Amount
+5️⃣ Visualizations:
+   - Bar chart: Top Product Categories by Revenue
+   - Pie chart: Gender distribution of customers
+   - Bar chart: Income Level vs Avg Purchase Amount
+6️⃣ Print clear English bullet-point insights for business decisions
